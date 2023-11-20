@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 :root {
-    --color-blue: #0083ff;
+    --color-blue: #e0b0ff;
     --color-pink: #ff5470;
     --color-slate: #273142;
 }
@@ -24,17 +24,10 @@ main a:not(.button):not(.fa):not(.arrow) {
     padding-left: 2px;
     padding-right: 2px;
     color: black;
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(0, 131, 255, 0.2)), to(rgba(0, 131, 255, 0.2)));
-    background: linear-gradient(to bottom, transparent 0, transparent 60%, rgba(0, 131, 255, 0.2) 60%, rgba(0, 131, 255, 0.2) 100%);
+    background: linear-gradient(to bottom, transparent 0, transparent 60%, var(--color-blue) 60%, var(--color-blue) 100%);
     text-decoration: none;
     transition: color 0.5s ease-in-out;
 }
-
-ul.bullet-list {
-    list-style-type: disc;
-  }
-
-
 
 main a:not(.button):not(.arrow):focus,
 main a:not(.button):not(.arrow):hover {
@@ -162,6 +155,10 @@ header {
     font-weight: 600;
     padding: 3em;
 }
+
+a {
+    color: purple; /* This will change the color of all hyperlinks to purple */
+  }
 
 header a {
     color: black;
